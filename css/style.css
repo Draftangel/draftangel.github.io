@@ -16,6 +16,10 @@
 #calendar-wrapper table td.tasked {
   border-color: red;
 }
+#calendar-wrapper table th.calendar-day,
+#calendar-wrapper table td.calendar-day {
+  cursor: pointer;
+}
 #calendar-wrapper table thead th,
 #calendar-wrapper table thead td {
   text-align: center;

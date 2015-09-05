@@ -1,0 +1,49 @@
+#calendar-wrapper {
+  width: 20rem;
+  position: relative;
+}
+#calendar-wrapper table {
+  border-collapse: separate;
+}
+#calendar-wrapper table th,
+#calendar-wrapper table td {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  padding: 0;
+}
+#calendar-wrapper table th.tasked,
+#calendar-wrapper table td.tasked {
+  border-color: red;
+}
+#calendar-wrapper table thead th,
+#calendar-wrapper table thead td {
+  text-align: center;
+  border-right-color: transparent;
+}
+#calendar-wrapper table thead th + th,
+#calendar-wrapper table thead td + th {
+  border-left-color: transparent;
+}
+#calendar-wrapper table thead th:last-child,
+#calendar-wrapper table thead td:last-child {
+  border-right-color: inherit;
+}
+#calendar-wrapper .calendar-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1rem;
+}
+#calendar-wrapper .calendar-info textarea {
+  resize: none;
+  height: 120px;
+}
+#calendar-wrapper .calendar-info .form-group:first-child {
+  margin-bottom: 5px;
+}
+#calendar-wrapper .calendar-info .btn {
+  margin: 4px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div id="calendar-wrapper">
+  <table id="calendar" class="table table-bordered text-center">
+    <thead>
+    <tr class="active">
+      <th><span class="calendar-prev btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-left"></span></span></th>
+      <th colspan="5" class="calendar-title">Март 2015</th>
+      <th><span class="calendar-next btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-right"></span></span></th>
+    </tr>
+    <tr class="active">
+      <td>Пн</td>
+      <td>Вт</td>
+      <td>Ср</td>
+      <td>Чт</td>
+      <td>Пт</td>
+      <td>Сб</td>
+      <td>Вс</td>
+    </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script type="text-template" id="note-add">
+    <div class="form bg-info calendar-info" id="note-message-add">
+      <div class="form-group">
+        <h5 class="text-center"><strong>Добавить заметку на <br/><%= date %></strong></h5>
+        <textarea class="form-control note-message" rows="6" placeholder="Введите текст"></textarea>
+      </div>
+      <div class="form-group text-center">
+        <button class="calendar-note-add btn btn-success btn-xs">Добавить</button>
+        <button class="calendar-note-cancel btn btn-primary btn-xs">Закрыть</button>
+      </div>
+    </div>
+  </script>
+  <script type="text-template" id="note-info">
+    <div class="form bg-info calendar-info"  id="note-message-info">
+      <div class="form-group">
+        <h5 class="text-center"><strong>Заметка на <span><%= date %></span></strong></h5>
+        <textarea class="form-control note-message" rows="6" placeholder="Введите текст"><%= message %></textarea>
+      </div>
+      <div class="form-group text-center">
+        <button class="calendar-note-save btn btn-success btn-xs">Сохранить</button>
+        <button class="calendar-note-delete btn btn-danger btn-xs">Удалить</button>
+        <button class="calendar-note-cancel btn btn-primary btn-xs">Закрыть</button>
+      </div>
+    </div>
+  </script>
+</div>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/underscore.js"></script>
+<script src="js/backbone.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
